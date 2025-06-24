@@ -72,9 +72,9 @@ function App() {
 
         <input
           type="file"
-          accept="application/pdf"
-          onChange={handleFileChange}
-          required
+  accept=".csv"
+  onChange={(e) => setCsvFile(e.target.files[0])}
+  required
         /><br /><br />
 
         <button type="submit">Send Email</button>
